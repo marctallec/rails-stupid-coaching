@@ -1,0 +1,18 @@
+<h1>Pages#answer</h1>
+<p>Find me in app/views/pages/answer.html.erb</p>
+
+
+<div class = "last" >
+<%if  @answer.include?("?")  %>
+<%= "Silly question, get dressed and go to work!"%>
+
+<% elsif @answer == "I am going to work" %>
+<%= "Great!"%>
+
+<% else %>
+<%= "I don't care, get dressed and go to work!"%>
+<% end %>
+
+<%= link_to "ask", ask_path %>
+</div>
+
